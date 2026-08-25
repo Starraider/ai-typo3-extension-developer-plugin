@@ -1,6 +1,6 @@
 # AI TYPO3 Extension Developer Plugin
 
-An Agent Plugins 1.0.0 package of reusable skills for TYPO3 v13 and v14 extension development. It provides portable Agent Skills only; it does not bundle an MCP server.
+This plugin collects portable, reusable Agent Skills for TYPO3 extension developers building new frontend or backend extensions for TYPO3 v13 and v14. The plugin and the skills comply with the [Agent Plugin 1.0.0 standard](https://agent-plugins.org/specification); it provides no MCP server.
 
 ## Installation
 
