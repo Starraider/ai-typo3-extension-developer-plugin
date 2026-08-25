@@ -5,7 +5,7 @@ license: CC-BY-4.0
 compatibility: Requires a TYPO3 v13 or v14 extension with custom database tables, TCA, and an authorized environment for schema and multilingual frontend verification.
 ---
 
-# TYPO3 Translatable Extension Data
+# TYPO3 translatable extension data
 
 ## Overview
 
@@ -14,6 +14,10 @@ Configure custom extension tables so TYPO3 can localize records with the standar
 ## Outcome
 
 Produce a complete localization contract for the affected table: SQL columns, TCA `ctrl` and field configuration, deliberate synchronization behavior, language-aware repository queries, and a controller that passes localized entities to the view.
+
+## Scope
+
+Use this Skill for localized custom records and the code that retrieves them. Keep XLF and Fluid text translation, standalone FlexForms, Scheduler tasks, and general frontend localization outside this workflow unless the request also requires a change to custom record data.
 
 ## Establish the Contract
 

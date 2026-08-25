@@ -27,7 +27,7 @@ Do not use it for general TCA/model design, Scheduler tasks, or localization of 
 
 ## Installation
 
-Install the complete Agent Plugin containing this directory through a compatible client. For standalone use, place this skill directory in a client project skill location such as `.agents/skills/typo3-flexforms/` or `.claude/skills/typo3-flexforms/`. The portable `SKILL.md` is authoritative; `agents/openai.yaml` only supplies optional Codex presentation metadata.
+Install the complete Agent Plugin through a compatible client. For standalone use, place this directory in the client's project skill location. The portable `SKILL.md` is authoritative. `agents/openai.yaml` supplies optional Codex presentation metadata.
 
 ## Supported clients
 

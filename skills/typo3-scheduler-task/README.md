@@ -1,4 +1,4 @@
-# TYPO3 Scheduler Task
+# TYPO3 Scheduler task
 
 Create and migrate custom TYPO3 v14 Scheduler tasks using native task classes and TCA-driven `tx_scheduler_task` records.
 
@@ -27,7 +27,7 @@ Do not use it for generic CLI/cron jobs, Extbase frontend plugins, FlexForms, or
 
 ## Installation
 
-Install the complete Agent Plugin containing this directory through a compatible client. For standalone use, place this skill directory in `.agents/skills/typo3-scheduler-task/` or `.claude/skills/typo3-scheduler-task/`. The portable `SKILL.md` is authoritative; `agents/openai.yaml` only supplies optional Codex presentation metadata.
+Install the complete Agent Plugin through a compatible client. For standalone use, place this directory in the client's project skill location. The portable `SKILL.md` is authoritative. `agents/openai.yaml` supplies optional Codex presentation metadata.
 
 ## Supported clients
 

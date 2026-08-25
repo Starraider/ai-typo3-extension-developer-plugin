@@ -1,14 +1,17 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "ai-typo3-extension-dev-skills-plugin",
+  "name": "ai-typo3-extension-developer-plugin",
   "version": "1.0.0",
   "description": "Reusable Agent Skills for developing and maintaining TYPO3 v13 and v14 extensions.",
   "author": {
     "name": "Sven Kalbhenn",
     "url": "https://www.skom.de"
   },
+  "homepage": "https://github.com/Starraider/ai-typo3-extension-developer-plugin",
+  "repository": "https://github.com/Starraider/ai-typo3-extension-developer-plugin.git",
   "license": "CC-BY-4.0",
   "keywords": [
+    "agent-skills",
     "typo3",
     "extbase",
     "flexforms",

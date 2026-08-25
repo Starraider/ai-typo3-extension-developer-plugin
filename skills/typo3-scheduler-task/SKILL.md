@@ -5,13 +5,17 @@ license: CC-BY-4.0
 compatibility: Requires a TYPO3 v14 extension with the Scheduler system extension and an authorized CLI/backend environment for schema, cache, and task verification.
 ---
 
-# TYPO3 Scheduler Task
+# TYPO3 Scheduler task
 
 Build and maintain native TYPO3 v14 scheduler tasks. This skill covers both greenfield task creation and modifications to existing custom tasks that must now be configured through TCA.
 
 ## Outcome
 
 Produce a native TYPO3 v14 Scheduler task with a task class, TCA record type, persisted configuration, labels, and migration-safe parameter mapping. Keep deprecated registration and additional-field-provider patterns out of new implementations.
+
+## Scope
+
+Use this Skill for Scheduler records and their task classes. Keep cron jobs, Extbase frontend work, FlexForms, and record localization in their separate workflows. A task may trigger external work, so request authorization at the point of schema updates, cache flushes, record changes, or execution.
 
 ## Use This Skill For
 

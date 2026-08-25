@@ -1,6 +1,6 @@
-# TYPO3 Translatable Extension Data
+# TYPO3 translatable extension data
 
-Make TYPO3 v13+/v14+ custom extension records translatable and keep Extbase/frontend queries aligned with the active site language.
+Make TYPO3 v13 and v14 custom extension records translatable and keep Extbase/frontend queries aligned with the active site language.
 
 ## What this skill solves
 
@@ -27,7 +27,7 @@ Do not use it for Fluid/XLF label translation, standalone FlexForms, Scheduler t
 
 ## Installation
 
-Install the complete Agent Plugin containing this directory through a compatible client. For standalone use, place this skill directory in `.agents/skills/typo3-translatable-extension-data/` or `.claude/skills/typo3-translatable-extension-data/`. The portable `SKILL.md` is authoritative; `agents/openai.yaml` only supplies optional Codex presentation metadata.
+Install the complete Agent Plugin through a compatible client. For standalone use, place this directory in the client's project skill location. The portable `SKILL.md` is authoritative. `agents/openai.yaml` supplies optional Codex presentation metadata.
 
 ## Supported clients
 

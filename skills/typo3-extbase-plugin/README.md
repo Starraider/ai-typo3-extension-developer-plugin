@@ -1,6 +1,6 @@
-# TYPO3 Extbase Plugin
+# TYPO3 Extbase plugin
 
-Build and extend TYPO3 v13+/v14+ Extbase frontend plugins with a coherent schema, persistence model, controller layer, backend registration, and Fluid view.
+Build and extend TYPO3 v13 and v14 Extbase frontend plugins with a coherent schema, persistence model, controller layer, backend registration, and Fluid view.
 
 ## What this skill solves
 
@@ -27,7 +27,7 @@ Do not use it for a standalone FlexForm, TYPO3 Scheduler task, or record localiz
 
 ## Installation
 
-Install the complete Agent Plugin containing this directory through a compatible client. For standalone use, place this skill directory in the client's project skill location (for example `.agents/skills/typo3-extbase-plugin/` for Codex or `.claude/skills/typo3-extbase-plugin/` for Claude Code). The portable `SKILL.md` is the runtime source; `agents/openai.yaml` only supplies optional Codex presentation metadata.
+Install the complete Agent Plugin through a compatible client. For standalone use, place this directory in the client's project skill location. The portable `SKILL.md` is the runtime source. `agents/openai.yaml` supplies optional Codex presentation metadata.
 
 ## Supported clients
 

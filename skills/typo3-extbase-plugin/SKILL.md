@@ -5,13 +5,17 @@ license: CC-BY-4.0
 compatibility: Requires a TYPO3 v13 or v14 extension codebase and its normal PHP/TYPO3 tooling; database and cache commands require an authorized project environment.
 ---
 
-# TYPO3 Extbase Plugin
+# TYPO3 Extbase plugin
 
-Complete workflow for building Extbase frontend plugins in a TYPO3 v13+/v14+ site package.
+Build Extbase frontend plugins in a TYPO3 v13 or v14 extension.
 
 ## Outcome
 
 Produce a consistent, wired Extbase feature whose schema, persistence model, controller actions, backend registration, dependency injection, TypoScript, and Fluid templates agree. Keep standalone FlexForm authoring, Scheduler tasks, and localization architecture in their focused skills; link to those skills when the request crosses a boundary.
+
+## Scope
+
+Use this Skill when the request needs the plugin's domain and frontend layers to agree. Hand off a standalone FlexForm, Scheduler, or record-localization task to the matching Skill. Apply more than one Skill only when the requested feature genuinely spans those concerns.
 
 ## Establish the Contract
 

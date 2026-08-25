@@ -1,25 +1,30 @@
-# TYPO3 Extension Development Skills
+# AI TYPO3 Extension Developer Plugin
 
 An Agent Plugins 1.0.0 package of reusable skills for TYPO3 v13 and v14 extension development. It provides portable Agent Skills only; it does not bundle an MCP server.
 
-## Included Skills
+## Installation
 
-- [TYPO3 Extbase Plugin](skills/typo3-extbase-plugin/README.md) — build or extend Extbase frontend plugins, including domain models, repositories, controllers, TCA, TypoScript, and registration.
-- [TYPO3 FlexForms](skills/typo3-flexforms/README.md) — create, modernize, and troubleshoot TYPO3 v14 FlexForms.
-- [TYPO3 Scheduler Task](skills/typo3-scheduler-task/README.md) — create or migrate TYPO3 v14 scheduler tasks using native TCA configuration.
-- [TYPO3 Translatable Extension Data](skills/typo3-translatable-extension-data/README.md) — configure localized custom records and language-aware Extbase retrieval.
+- [Install the complete Agent Plugin](plugin-installation.md) in Codex, Cursor,
+  GitHub Copilot, or Visual Studio Code.
+- [Install individual Agent Skills](skill-installation.md) in Antigravity,
+  OpenCode, Windsurf, Zed, Trae, or Qoder.
+
+## Included skills
+
+| Skill | Use it for |
+| --- | --- |
+| [TYPO3 Extbase Plugin](skills/typo3-extbase-plugin/README.md) | Extbase frontend plugins, including models, repositories, controllers, TCA, TypoScript, Fluid, and registration. |
+| [TYPO3 FlexForms](skills/typo3-flexforms/README.md) | TYPO3 v14 FlexForm XML, registration, settings names, and repair of legacy definitions. |
+| [TYPO3 Scheduler Task](skills/typo3-scheduler-task/README.md) | TYPO3 v14 Scheduler task classes, TCA record types, persisted task fields, and legacy migrations. |
+| [TYPO3 Translatable Extension Data](skills/typo3-translatable-extension-data/README.md) | Localized custom records and language-aware Extbase queries for TYPO3 v13 and v14. |
 
 ## Package Layout
 
-`plugin.json` is the portable Agent Plugins v1 manifest. Skills are discovered from immediate child directories of `skills/`; each skill's `SKILL.md` is the operational instruction source. The `agents/openai.yaml` files are retained as client-specific presentation metadata and are not part of the portable plugin contract.
-
-## Installation
-
-Install this complete plugin directory through an Agent Plugins-compatible client. For standalone skill use, install an individual `skills/<name>/` directory in the target client's project skill location; each skill README documents the supported paths and portable behavior.
+`plugin.json` is the portable Agent Plugins 1.0.0 manifest. Compatible clients discover Skills from immediate child directories of `skills/`; each `SKILL.md` is the operational source. Each Skill also has a local README and optional `agents/openai.yaml` metadata for Codex. That metadata is not part of the portable package contract.
 
 ## Validation
 
-From the plugin root, run the Agent Plugin validator and the `new-skill` validator for every immediate child skill:
+From the plugin root, run the Agent Plugin validator and validate every immediate child Skill:
 
 ```bash
 python3 /path/to/agent-plugin-builder/scripts/validate_agent_plugin.py --strict .
@@ -28,7 +33,7 @@ for skill in skills/*; do
 done
 ```
 
-When available, also run `skills-ref validate` for each skill and perform the TYPO3-specific runtime checks described in its README. Runtime schema, cache, backend, frontend, and Scheduler checks require an authorized TYPO3 environment.
+These validators are provided by the Agent Plugin Builder and New Skill toolsets, not by this package. When available, also run `skills-ref validate` for each Skill and perform the TYPO3 runtime checks described in its README. Schema, cache, backend, frontend, and Scheduler checks require an authorized TYPO3 environment.
 
 ## Compatibility
 
