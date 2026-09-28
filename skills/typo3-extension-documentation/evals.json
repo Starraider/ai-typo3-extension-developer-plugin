@@ -1,0 +1,40 @@
+{
+  "skill_name": "typo3-extension-documentation",
+  "evals": [
+    {
+      "id": 1,
+      "kind": "representative",
+      "prompt": "Create a reStructuredText documentation manual for this TYPO3 extension, based on its composer.json and configuration. Render it locally.",
+      "expected_output": "A Documentation manual with guides.xml, an Index.rst start anchor and toctree, accurate chapters, and a local renderer result.",
+      "files": ["composer.json", "Configuration/"],
+      "expectations": [
+        "The new manual includes Documentation/guides.xml and Documentation/Index.rst.",
+        "Index.rst declares the start anchor and lists all created chapters in a toctree.",
+        "The renderer runs from the extension root and reports the generated Index.html location."
+      ]
+    },
+    {
+      "id": 2,
+      "kind": "edge-case",
+      "prompt": "Our Markdown TYPO3 documentation has an Index.md but a nested chapter does not appear in the menu. Repair it and add a non-interactive render check.",
+      "expected_output": "A Markdown-compatible guides.xml and a repaired chapter structure, plus a minimal renderer command or requested CI change.",
+      "files": ["Documentation/guides.xml", "Documentation/Index.md"],
+      "expectations": [
+        "guides.xml has input-format=\"md\", index-name=\"Index\", and automatic-menu=\"true\".",
+        "Every Markdown subdirectory used for navigation has Index.md.",
+        "The minimal test uses --config=Documentation --no-progress --minimal-test."
+      ]
+    },
+    {
+      "id": 3,
+      "kind": "near-miss",
+      "prompt": "Set up the TYPO3 Docs webhook and push our documentation to production.",
+      "expected_output": "A prerequisite review and explicit request for authorization before configuring the webhook or pushing.",
+      "files": ["composer.json", "Documentation/"],
+      "expectations": [
+        "The response checks the public repository, Composer metadata, manual or README, and approval prerequisites.",
+        "The response does not configure an external webhook, push, tag, or publish without explicit authorization."
+      ]
+    }
+  ]
+}

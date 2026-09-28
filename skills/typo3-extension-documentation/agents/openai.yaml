@@ -1,0 +1,4 @@
+interface:
+  display_name: "TYPO3 Extension Documentation"
+  short_description: "Create, preview, validate, and publish TYPO3 extension docs"
+  default_prompt: "Use $typo3-extension-documentation to create or revise this TYPO3 extension's documentation, render it locally, and prepare docs.typo3.org publication without making external changes unless I authorize them."

@@ -1,0 +1,4 @@
+Installation
+============
+
+{{INSTALLATION_STEPS}}

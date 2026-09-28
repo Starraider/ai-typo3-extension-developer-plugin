@@ -1,0 +1,15 @@
+# {{EXTENSION_TITLE}}
+
+{{ONE_SENTENCE_PURPOSE}}
+
+## Installation
+
+{{INSTALLATION_STEPS}}
+
+## Configuration
+
+{{CONFIGURATION_STEPS}}
+
+## Usage
+
+{{USAGE_STEPS}}

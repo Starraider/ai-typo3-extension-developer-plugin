@@ -16,6 +16,8 @@
     "extbase",
     "flexforms",
     "scheduler",
-    "localization"
+    "localization",
+    "documentation",
+    "docs.typo3.org"
   ]
 }

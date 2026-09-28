@@ -1,0 +1,18 @@
+<guides xmlns="https://www.phpdoc.org/guides"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.phpdoc.org/guides vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+        input-format="md"
+        index-name="Index"
+        automatic-menu="true"
+>
+    <project title="{{EXTENSION_TITLE}}" />
+    <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+               edit-on-github="{{GITHUB_OWNER_AND_REPOSITORY}}"
+               edit-on-github-branch="{{DEFAULT_BRANCH}}"
+               interlink-shortcode="{{COMPOSER_PACKAGE_NAME}}"
+               project-home="{{PROJECT_HOME_URL}}"
+               project-issues="{{ISSUES_URL}}"
+               project-repository="{{REPOSITORY_URL}}"
+               typo3-core-preferred="{{TYPO3_VERSION}}"
+    />
+</guides>

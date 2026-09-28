@@ -17,6 +17,7 @@ This plugin collects portable, reusable Agent Skills for TYPO3 extension develop
 | [TYPO3 FlexForms](skills/typo3-flexforms/README.md) | TYPO3 v14 FlexForm XML, registration, settings names, and repair of legacy definitions. |
 | [TYPO3 Scheduler Task](skills/typo3-scheduler-task/README.md) | TYPO3 v14 Scheduler task classes, TCA record types, persisted task fields, and legacy migrations. |
 | [TYPO3 Translatable Extension Data](skills/typo3-translatable-extension-data/README.md) | Localized custom records and language-aware Extbase queries for TYPO3 v13 and v14. |
+| [TYPO3 Extension Documentation](skills/typo3-extension-documentation/README.md) | Extension manuals, local previews, renderer checks, and docs.typo3.org publication preparation. |
 
 ## Package Layout
 
