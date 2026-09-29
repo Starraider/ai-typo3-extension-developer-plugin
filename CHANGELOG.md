@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/Starraider/ai-typo3-extension-developer-plugin/compare/v1.0.0...v1.1.0) (2026-09-29)
+
+
+### Features
+
+* Add typo3-ter-publication skill. ([16e7223](https://github.com/Starraider/ai-typo3-extension-developer-plugin/commit/16e722396c2ccebc8ae0bc456ae49396daf90950))
+* New extension documentation skill. ([0d84622](https://github.com/Starraider/ai-typo3-extension-developer-plugin/commit/0d84622d3a1035df396db04bea469362493a7874))
+
 ## 1.0.0 (2026-09-24)
 
 
