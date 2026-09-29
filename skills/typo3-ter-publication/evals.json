@@ -1,0 +1,39 @@
+{
+  "skill_name": "typo3-ter-publication",
+  "evals": [
+    {
+      "id": 1,
+      "kind": "representative",
+      "prompt": "Prepare this TYPO3 14.3 extension for its first TER release. Review composer.json, ext_emconf.php, tests, resources, and CI, then give me a checked submission plan.",
+      "expected_output": "A source-backed audit and repaired release artifacts with consistent metadata, local quality checks, package inspection, and a TER-specific submission handoff.",
+      "files": ["composer.json", "ext_emconf.php", "Configuration/", "Resources/", "Tests/"],
+      "expectations": [
+        "The extension key, Composer name, version, PHP/TYPO3 constraints, and license are checked across files.",
+        "The response distinguishes TYPO3 PHP-CS-Fixer rules from supplemental PHPCS and runs or reports both.",
+        "The package is inspected for vendor, secrets, and build output before publication."
+      ]
+    },
+    {
+      "id": 2,
+      "kind": "edge-case",
+      "prompt": "Our TYPO3 13 and 14 extension still uses ext_icon.svg and ext_tables.php, and friendsoftypo3/phpstan-typo3 is in require-dev. Get it TER-ready without dropping TYPO3 13 support.",
+      "expected_output": "Migration to current icon and registration locations, compatible static analysis, and a tested cross-version support claim.",
+      "files": ["ext_tables.php", "composer.json", "Resources/"],
+      "expectations": [
+        "The extension icon moves to Resources/Public/Icons/Extension.svg.",
+        "The PHPStan package retirement and TYPO3 13 compatibility are handled explicitly.",
+        "The agent does not claim a single untested dependency constraint supports both TYPO3 versions."
+      ]
+    },
+    {
+      "id": 3,
+      "kind": "near-miss",
+      "prompt": "Write a new Extbase frontend plugin and its controller; there is no release or TER work in this request.",
+      "expected_output": "The agent routes to the implementation skill rather than invoking TER publication steps.",
+      "files": ["Classes/Controller/"],
+      "expectations": [
+        "No TER key registration, tag, or publishing action is proposed as part of feature implementation."
+      ]
+    }
+  ]
+}

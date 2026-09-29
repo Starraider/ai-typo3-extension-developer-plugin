@@ -1,0 +1,4 @@
+interface:
+  display_name: "TYPO3 TER Publication"
+  short_description: "Prepare, publish, and maintain TYPO3 extensions in TER"
+  default_prompt: "Use $typo3-ter-publication to audit this extension for TER, repair release blockers, run the available checks, and prepare a reviewable release. Publish only when I authorize the external action."

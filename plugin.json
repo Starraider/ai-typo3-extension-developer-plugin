@@ -18,6 +18,8 @@
     "scheduler",
     "localization",
     "documentation",
-    "docs.typo3.org"
+    "docs.typo3.org",
+    "ter",
+    "release"
   ]
 }
