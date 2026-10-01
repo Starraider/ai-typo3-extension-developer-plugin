@@ -13,29 +13,27 @@ Create and repair FlexForms in TYPO3 v14.
 
 Produce a valid TYPO3 v14 FlexForm XML definition and the matching registration so editors can see, save, and retrieve the intended settings. Keep the XML, `settings.` namespace, registration API, and backend TCA in sync.
 
+## TYPO3 v14 rules
+
+- Place field configuration directly below each element (for example directly as `<config>...</config>`). The legacy `<TCEforms>` wrapper was removed in TYPO3 v13; leaving it in place breaks the FlexForm display in the backend.
+- Prefix Extbase field names with `settings.`. That makes them available as `$this->settings['limit']` in controllers and `{settings.limit}` in Fluid.
+- Pass the FlexForm XML path directly to `ExtensionUtility::registerPlugin()` or `ExtensionManagementUtility::addPlugin()` when the selected API supports it. Retire `addPiFlexFormValue()` and custom `showitem` workarounds only after checking the target registration. Internally, the direct parameter adds the FlexForm definition to the plugin's `ds` option through `columnsOverrides`, so check `columnsOverrides` first when debugging a FlexForm that does not appear.
+
 ## Workflow
 
 1. Classify the target as an Extbase plugin or a plain content element, identify its plugin/ctype key, and inspect existing registration and XML before editing.
 
    Completion: the registration API, XML path, desired fields, and whether existing records must remain compatible are known.
 
-## TYPO3 v14 rules
-
-- Place field configuration directly below each element. TYPO3 no longer supports the legacy `<TCEforms>` wrapper.
-- Prefix Extbase field names with `settings.`. That makes them available as `$this->settings['limit']` in controllers and `{settings.limit}` in Fluid.
-- Pass the FlexForm XML path directly to `ExtensionUtility::registerPlugin()` or `ExtensionManagementUtility::addPlugin()` when the selected API supports it. Retire `addPiFlexFormValue()` and custom `showitem` workarounds only after checking the target registration.
-
-## Workflow
-
-1. Create or update the FlexForm XML in `Configuration/FlexForms/PluginName.xml`. Use direct field configuration under each element, prefix Extbase fields with `settings.`, and preserve compatible field names unless a migration is intentional.
+2. Create or update the FlexForm XML in `Configuration/FlexForms/PluginName.xml`. Use direct field configuration under each element, prefix Extbase fields with `settings.`, and preserve compatible field names unless a migration is intentional.
 
    Completion: the XML has no `<TCEforms>` wrapper, every field has a valid type/configuration, and category fields follow the supported one-to-many behavior.
 
-2. Register the FlexForm with the direct registration parameter for the chosen API. Remove obsolete `addPiFlexFormValue()` or custom `showitem` workarounds only after confirming they are no longer needed by the target TYPO3 version.
+3. Register the FlexForm with the direct registration parameter for the chosen API. Remove obsolete `addPiFlexFormValue()` or custom `showitem` workarounds only after confirming they are no longer needed by the target TYPO3 version.
 
    Completion: the registration points to the real XML path and the plugin/ctype remains available in the backend.
 
-3. Validate the result by parsing the XML, checking the PHP/TCA registration, and opening an existing and a new content record in the backend when the project environment is available.
+4. Validate the result by parsing the XML, checking the PHP/TCA registration, and opening an existing and a new content record in the backend when the project environment is available.
 
    Completion: fields render and persist under the expected names, or the unavailable runtime check is reported.
 
