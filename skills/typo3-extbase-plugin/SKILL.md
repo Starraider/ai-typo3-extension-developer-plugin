@@ -1,6 +1,6 @@
 ---
 name: typo3-extbase-plugin
-description: Build and extend TYPO3 v13+/v14+ Extbase frontend plugins across database schema, domain models, repositories, controllers, TCA, TypoScript, Fluid templates, dependency injection, and plugin registration. Use when creating an Extbase plugin or adding models, relations, CRUD actions, frontend-user ownership, or persistence mappings. Do not use for standalone FlexForms, Scheduler tasks, or record localization; use the corresponding focused skill.
+description: Build and extend TYPO3 v13+/v14+ Extbase frontend plugins across database schema, domain models, repositories, controllers, TCA, TypoScript, Fluid templates, dependency injection, and plugin registration. Use when creating an Extbase plugin or controller action, adding domain models and properties (sys_category relations, fe_users ownership, Country fields, ObjectStorage relations, FileReference images), CRUD actions (list, show, new, create, edit, update, delete), TCA for custom tables, tt_content plugin registration, or fixing persistence mappings. Do not use for standalone FlexForms, Scheduler tasks, or record localization; use the corresponding focused skill.
 license: CC-BY-4.0
 compatibility: Requires a TYPO3 v13 or v14 extension codebase and its normal PHP/TYPO3 tooling; database and cache commands require an authorized project environment.
 ---
